@@ -1,0 +1,11 @@
+#The site wide list of mongodb servers
+
+# the mongo servers need a mongod_port variable set, and they must not conflict.
+[deployment_master]
+arqui9
+
+[deployment_slaves]
+arqui10
+arqui11
+arqui12
+
