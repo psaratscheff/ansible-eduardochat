@@ -42,7 +42,7 @@ Change this in corresponding folders, path matters. <br/>
 Example:
 ```
 ---
-# This Playbook runs all the common plays in the deployment
+# /roles/<repo-name>/tasks/main.yml
 
 - name: GIT-PULL
   git:  repo=<repo-url> dest=<absolute-path-to-server-folder> refspec=+refs/pull/*:refs/heads/*
@@ -53,5 +53,11 @@ Example:
 
 - name: Restart Services PM2
   command: /usr/bin/pm2 restart <pm2-app-name>
+  
+- name: Something else
+  command: /path/to/script
 ```
+
+# Ansible
+For more information look into the [Ansible Documentation](http://docs.ansible.com/)
 
