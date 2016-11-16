@@ -2,7 +2,7 @@
 # This Playbook runs all the common plays in the deployment
 
 - name: GIT-PULL Dashboard
-  git:  repo=https://github.com/IIC2173-2016-2/dashboard-eduardochat.git dest=/home/administrator/dashboard refspec=+refs/pull/*:refs/heads/*
+  git:  repo=https://github.com/IIC2173-2016-2/dashboard-eduardochat.git dest=/home/administrator/dashboard
   become_user: administrator
 
 - name: NPM install dependencies
