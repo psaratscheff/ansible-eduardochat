@@ -4,5 +4,3 @@
 - hosts: deployment_slaves
   roles:
   - arquicoins
-  - dashboard
-  - chat
