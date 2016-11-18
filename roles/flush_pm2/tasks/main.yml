@@ -1,0 +1,5 @@
+---
+# This Playbook runs all the common plays in the deployment
+
+- name: FLUSH PM2 logs
+  command: /usr/bin/pm2 flush

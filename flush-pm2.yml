@@ -3,7 +3,4 @@
 
 - hosts: deployment_slaves
   roles:
-  - arquicoins
-  - dashboard
-  - chat
-  - foursquare
+  - flush_pm2

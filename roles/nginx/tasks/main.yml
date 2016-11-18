@@ -1,0 +1,9 @@
+---
+# This Playbook runs all the common plays in the deployment
+
+- name: GIT-PULL NGINX
+  git:  repo=https://github.com/psaratscheff/nginx-eduardochat.git dest=/home/administrator/nginx-eduardochat
+  become_user: administrator
+
+- name: sudo nginx -s reload
+  command: ??
